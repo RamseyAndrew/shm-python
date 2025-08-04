@@ -2,7 +2,7 @@
 
 # for ,while , do_while
 
-
+## -1 ,1 -> -1, 1
 
 # while (<condition>):
 to_loop=True
