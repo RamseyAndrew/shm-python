@@ -1,10 +1,8 @@
 # snake case
 # snake_case
 # indentation
-
 x=10 #Integer 
-print(x)
-print(type(x))
+print(x,type(x))
 pi=3.142  #Floating
 print(pi)
 print(type(pi))
