@@ -30,7 +30,7 @@ for i in range(10,2,-1):
    print("For loop is is",i)
 
 
-for i in range(0,1000,2):
+for i in range(0,1000,5):
    print("All even numbers",i)
 
 fruits=["Mango","Papaya","Orange"]
@@ -39,5 +39,6 @@ for fruit in fruits:
    print(fruit)
 
 for i in range(0,3):
+    # 0,1,2 // fruits[0] //fruits[1] //fruits[2]
     fruit=fruits[i]
     print(fruit)
