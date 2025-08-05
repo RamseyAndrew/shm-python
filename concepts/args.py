@@ -27,5 +27,4 @@ def sum(*args):
         
     print("Ans is ",ans)
     return ans
-
-sum(100,50,20,30,150,200,700)
+    sum(100,50,20,30,150,200,700)
