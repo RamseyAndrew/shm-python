@@ -7,7 +7,10 @@ def greet(name,nationality):
     print("Name is",name)
     print("From ",nationality)
 
-## Kwargs solve the mixup
-greet("John","India")
+#KWARGS PROFILE
+def employee(**kwargs):
+    print(kwargs)
 
-greet(nationality="Babylon",name="Samson")
+#{key:value}
+employee(name="Samson",age=20,degree="Engineering")
+employee(name="Samson",country="Kenya",degree="Engineering")
