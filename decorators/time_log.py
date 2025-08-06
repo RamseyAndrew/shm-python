@@ -4,7 +4,7 @@ import time
 def time_fn(fn):
     def wrapper(*args,**kwargs):
         start_time=time.time()
-        fn(*args,**kwargs)
+        fn(*args,**kwargs) # will run
         end_time=time.time()
         diff=end_time-start_time
         print("Time taken to run",diff)
@@ -31,4 +31,4 @@ def sum(*args):
     print("Ans is ",ans)
     return ans
 
-sum(1,2,3,1000,10002,5345,34535,12234234,654645,23423)
+sum(1,2,3,1000)
