@@ -6,7 +6,7 @@ function args(array) {
 
 args([]);
 
-function sum(array) {
+function add(array) {
   let ans = 0;
   for (let value of array) {
     ans = ans + value;
@@ -15,4 +15,5 @@ function sum(array) {
   return ans;
 }
 
-sum([10, 20, 30]);
+add([10, 20, 30]); 
+
