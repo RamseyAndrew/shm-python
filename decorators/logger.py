@@ -3,6 +3,7 @@
 
 import time
 
+
 def logger(func):
     def wrapper(*args,**kwargs):
         start_time=time.time()
@@ -33,6 +34,4 @@ def sum(*args):
     
     print("Ans is ",ans)
     return ans
-
-counter()
 
