@@ -9,7 +9,7 @@ def greet(name,nationality):
 
 
 
-# greet(name="",nationality="")
+#greet(name="",nationality="")
 # greet("Mwange","Kenya")
 ## greet option to use or not
 ## let x=20 : Language feature
