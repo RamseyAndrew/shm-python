@@ -4,6 +4,7 @@
 import time
 
 
+
 def logger(func):
     def wrapper(*args,**kwargs):
         start_time=time.time()
@@ -18,7 +19,8 @@ def logger(func):
 def write_file(f_name,txt):
     with open(f_name,'a') as file:
         file.write(f"{txt} \n")
-        
+       
+
 @logger
 def counter():
     for n in range(0,10000000):
