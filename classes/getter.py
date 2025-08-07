@@ -12,6 +12,8 @@
 # initialiZer <constrocture>
 # self key what it is :<this>
 
+from datetime import datetime
+
 def write_file(f_name,txt):
     with open(f_name,'a') as file:
         file.write(f"{txt} \n")
@@ -30,12 +32,12 @@ class Human():
           self.ribs=23
           self.curse="Pain"
 
-    @property
     def get_name(self):
-        print("Somebody wants to get the name of a property")
-        write_file(f_name="log.txt",txt=f"Tried to get name ")
+        now = datetime.now()
+        print("Curreent date and time",now)
+        write_file(f_name="log.txt",txt=f"At {now} got name from adam")
         return self.name
-    
+
     def print_self(self):
         print("----------------------")
         print("name",self.name)
@@ -47,14 +49,11 @@ class Human():
 
 # adam=Human(name="adam",gender="Male") #object from a class
 adam=Human(name="adam",gender="Male")
-# adam.print_self()
-print(adam.get_name)
-# Gett data from an object
 
-# getting data or reading data
+#Getter a property of: <name>:
+# print(adam.name)
 
-# Getters and Setters
-#----> Security<python> ---> Like Decorator -->modify when tries to get
-# Control how thhe data is gotten.
+print(adam.get_name())
 
-# employee-> salary -> modified when its being modified
+# @property
+
