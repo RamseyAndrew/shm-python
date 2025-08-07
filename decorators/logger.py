@@ -1,7 +1,8 @@
 
-#path
 
 import time
+
+
 
 def logger(func):
     def wrapper(*args,**kwargs):
@@ -17,7 +18,8 @@ def logger(func):
 def write_file(f_name,txt):
     with open(f_name,'a') as file:
         file.write(f"{txt} \n")
-        
+       
+
 @logger
 def counter():
     for n in range(0,10000000):
@@ -33,5 +35,3 @@ def sum(*args):
     
     print("Ans is ",ans)
     return ans
-
-counter()
