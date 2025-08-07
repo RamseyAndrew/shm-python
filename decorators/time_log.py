@@ -27,7 +27,6 @@ def sum(*args):
         # print(f"{ans}={ans}+{n}")
         print(ans,"=",ans,"+",n)
         ans=ans+n
-    
     print("Ans is ",ans)
     return ans
 

@@ -8,29 +8,39 @@
 
 #method your create you have to hhave thhe self: keyworkd
 
+#how to create a class <-->What a class is
+# initialiZer <constrocture>
+# self key what it is :<this>
+
 class Human():
 
-    def __init__(self):
+    def __init__(self,gender,name):
         print("The initializer wass called")
-        
-    def learn_self(self,object,gender,name):
-        object.gender=gender
-        object.name=name
-        if object.gender=="Male":
-            object.ribs=24
-            object.curse="Suffer"
+        self.gender=gender
+        self.name=name
+        if self.gender=="Male":
+            self.ribs=24
+            self.curse="Suffer"
         else :
-          object.ribs=23
-          object.curse="Pain"
-    
+          self.ribs=23
+          self.curse="Pain"
+        
+
+    def print_self(self):
+        print("----------------------")
+        print("name",self.name)
+        print("gender",self.gender)
+        print("ribs",self.ribs)
+        print("curse",self.curse)
+        print("---------------------")
+
+
 # adam=Human(name="adam",gender="Male") #object from a class
-adam=Human()
-adam.learn_self(name="adam",gender="Male",object=adam)
-print("name",adam.name)
-print("gender",adam.gender)
-print("ribs",adam.ribs)
-print("curse",adam.curse)
-print("")
+adam=Human(name="adam",gender="Male")
+adam.print_self()
+
+eve=Human(name="eve",gender="Female")
+eve.print_self()
 # eve=Human(name="eve",gender="Female")
 # print("name",eve.name)
 # print("gender",eve.gender)
