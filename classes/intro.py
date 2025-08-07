@@ -5,6 +5,7 @@ class Student:
      email="sam@sam.com"
      phone="25472390423"
 
+
 #student 1
 student1=Student() #Object datatype: dot notation
 student2=Student()
