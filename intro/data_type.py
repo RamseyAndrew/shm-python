@@ -2,7 +2,14 @@
 # snake_case
 # indentation
 x=10 #Integer 
-print(x,type(x))
+print(x,type(x).__name__)
+
+if type(x).__name__=="int":
+    print("X is an integer")
+
+if isinstance(x,(int,float)):
+    print("X is an integer")
+
 pi=3.142  #Floating
 print(pi)
 print(type(pi))
