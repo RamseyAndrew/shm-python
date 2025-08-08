@@ -70,3 +70,4 @@ eve=Human(name="eve",gender="Female")
 
 print("adam species",adam.species)
 print("eve species",eve.species)
+print("class property",Human.species)
