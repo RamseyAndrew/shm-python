@@ -18,11 +18,13 @@ def write_file(f_name,txt):
     with open(f_name,'a') as file:
         file.write(f"{txt} \n")
        
-
+#static<Not changing>
+#static property:<Class itself> -> 
 class Human():
 
     species="H.sapiens"
     genus="Homo"
+    count=0
     
     def __init__(self,gender,name):
         print("The initializer wass called")
@@ -34,7 +36,9 @@ class Human():
         else :
           self._ribs=23
           self._curse="Pain"
-
+        #Human.count=Human.count+1
+        self.__class__.count=self.__class__.count+1
+    
     @property
     def name(self):
         now = datetime.now()
@@ -71,3 +75,5 @@ eve=Human(name="eve",gender="Female")
 print("adam species",adam.species)
 print("eve species",eve.species)
 print("class property",Human.species)
+
+print("Total humans",Human.count)
