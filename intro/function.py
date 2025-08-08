@@ -9,8 +9,8 @@ def greet(name,country):
     outer()
     inner()
     print(name,country)
-    print("Hi ",name," Your favourite country",country)
-    print(f"Hi {name} Your favourite country {country}")
+    print("Hi ",name," Your favourite country is ",country)
+    print("Hi {name} Your favourite country is {country}")
 
 
 def outer():
