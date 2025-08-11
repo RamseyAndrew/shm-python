@@ -37,7 +37,6 @@ class Human():
           self._ribs=23
           self._curse="Pain"
         #Human.count=Human.count+1
-        #Human=self.__class__
         self.__class__.count=self.__class__.count+1
     
     @property
@@ -68,17 +67,28 @@ class Human():
         print("curse",self._curse)
         print("---------------------")
 
+        @classmethod
+        def get_general_info(cls):
+            print("Species",cls.species)
+            print("Species",cls.genus)
+            print("species", cls.species)
+
+            
+
 
 # adam=Human(name="adam",gender="Male") #object from a class
 adam=Human(name="adam",gender="Male")
 eve=Human(name="eve",gender="Female")
 
-#adam:<HUMAN>-<name and gender -> adam 
-#eve<HUMAN> -> name and gender -> eve
-# print(adam.__class__)
-
-# print("adam species",adam.species)
-# print("eve species",eve.species)
-# print("class property",Human.species)
+print("adam species",adam.species)
+print("eve species",eve.species)
+print("class property",Human.species)
 
 print("Total humans",Human.count)
+
+adam.print_self()
+eve.print_self()
+
+Human.get_general_info()
+
+
